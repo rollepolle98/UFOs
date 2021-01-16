@@ -10,6 +10,9 @@ So the way the site works is fairly simple, when it is first loaded up it is com
 
 ### Unflitered
 
+![](Deliverable_1/static/images/unfiltered.png) 
+
+
 After seeing the unfiltered page , we can then take a look at the filtered page below where we were able to filter by Date, City, State, Country and even Shape of the sighting.
 
 
