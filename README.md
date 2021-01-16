@@ -17,3 +17,13 @@ After seeing the unfiltered page , we can then take a look at the filtered page 
 
 
 ### Filtered
+
+![](Deliverable_1/static/images/filtered.png) 
+
+## Summary (Flaws)
+
+* This site could be far more efficient in that there is no "clear" button that would reset all outputs so if you wanted to filter different factors back to back it would make it far more efficient and user friendly.
+
+* If there was a way to simply input longitude / latitude I believe that could bring this to the next level because say if someone was curious about an unmarked area like Area 51, they could simply look up the coordinates and get the informations
+
+* Also if there was a way to simply put "my location" that way if someone were traveling, they could simply drop their pin and get all the information they are looking for !
