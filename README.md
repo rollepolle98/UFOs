@@ -16,9 +16,25 @@ So the way the site works is fairly simple, when it is first loaded up it is com
 After seeing the unfiltered page , we can then take a look at the filtered page below where we were able to filter by Date, City, State, Country and even Shape of the sighting.
 
 
-### Filtered
+### Filtered by Date
 
-![](Deliverable_1/static/images/filtered.png) 
+![](Deliverable_1/static/images/by-date.png) 
+
+### Filtered by City
+
+![](Deliverable_1/static/images/by-city.png) 
+
+### Filtered by State
+
+![](Deliverable_1/static/images/by-state.png) 
+
+### Filtered by Country
+
+![](Deliverable_1/static/images/by-country.png) 
+
+### Filtered by Shape of Sighting
+
+![](Deliverable_1/static/images/by-shape.png) 
 
 ## Summary (Flaws)
 
