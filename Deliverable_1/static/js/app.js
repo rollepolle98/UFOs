@@ -1,18 +1,22 @@
-
+    // from data.js
 const tableData = data;
 
-
+    // getting table references
 var tbody = d3.select("tbody");
 
 function buildTable(data) {
-  
+    // First, clear out any existing data
   tbody.html("");
+  
+    // Loop through each object in the data + append a row and cells for each 
+    // value in the row
 
   data.forEach((dataRow) => {
-  
+    // Append a row to the table body
     let row = tbody.append("tr");
 
-  
+    // Loop through each field and add each value as a table cell.
+    
     Object.values(dataRow).forEach((val) => {
       let cell = row.append("td");
       cell.text(val);
@@ -20,17 +24,18 @@ function buildTable(data) {
   });
 }
 
-
+    // Keep Track of all filters
 var filters = {};
 
 
 function updateFilters() {
 
- 
+    // Save the element, value, and id of the filter that was changed
   let changedElement = d3.select(this);
   let elementValue = changedElement.property("value");
   let filterId = changedElement.attr("id");
-
+    // If a filter value was entered then add that filterId and value to the
+    // filters list.
   if (elementValue) {
     filters[filterId] = elementValue;
   }
@@ -38,7 +43,7 @@ function updateFilters() {
     delete filters[filterId];
   }
 
-
+    // Apply all filters and rebuild the table
   filterTable();
 
 
@@ -46,20 +51,23 @@ function updateFilters() {
 
 function filterTable() {
 
-  
+    // Set the filteredData to the tableData
   let filteredData = tableData;
+
+    // Loop through all of the filters + keep any data that matches the 
+    // filter values
 
  
   Object.entries(filters).forEach(([key, value]) => {
     filteredData = filteredData.filter(row => row[key] === value);
   });
 
- 
+    // Rebuild the table using the filtered Data
   buildTable(filteredData);
 }
 
-
+    // Attach an event to listen for changes to each filter
 d3.selectAll("input").on("change", updateFilters);
 
-
+    // Build the table when the page loads
 buildTable(tableData);

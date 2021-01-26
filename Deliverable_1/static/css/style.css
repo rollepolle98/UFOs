@@ -1,6 +1,10 @@
+
+/* Styling for website */
 body {
   color: #f7f7f7;
 }
+
+/*Sizing for website */
 
 .jumbotron {
   background-image: url("../images/nasa.jpg");
@@ -8,6 +12,8 @@ body {
   text-align: center;
 }
 
+
+/*padding for website */
 .article-title, .article-p {
   padding: 20px;
 }
